@@ -1,36 +1,103 @@
 body {
-    font-family: Arial, Sans-serif;
+    font-family: 'Times New Roman';
     margin: 0;
     padding: 20px;
-    background-color: pink;
-}
-.container {
-    max-width: 800px;
-    margin: auto;
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px
-rgba(0,0,0.1);
-}
-h1, h2{
+    background: #f0f0f0;
     color: #333;
 }
-.portfolio{
+header{
+    font-size: 40px;
     text-align: center;
+    font-style: bold;
+    color: #333;
+    text-decoration: underline;
+}
+header h1{
+    font-size: 1.5em;
+    margin: 0;
+    color: #fff;
+}
+header p{
+    font-size: 1.5em;
+    color: #fff;
+    margin: 10px 0;
+}
+.container {
+    max-width: 150px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 20px rgba(0,0,0.1);
+}
+.left{
+    float: left;
+    width: 50%;
+}
+.right{
+    float: right;
+    width: 50%;
+}
+.profile{
+    align-items: center;
     margin-bottom: 20px;
 }
-.portfolio img{
-    width: 200px;
-    height: 150px;
-    border-radius: 50%;
-    border: 2px solid #333;
-}.download-btn{
-    display: block;
+.profile img{
+    width: 250px; /* Adjust this value to reduce size */
+    height: auto; /* Maintain aspext ratio */
+    border-radius: 50%; /* Oval Shape */
+    border: 5px solid #ff6bbc;
+    box-shadow: 0 5px 15px rgb(41, 2, 2);
+    margin-right: 20px;
 }
-.work-sample{
-    margin-bottom: 20px;
+.profile-info{
+    flex: 1;
 }
-.skills{
-    margin-bottom: 20px ;
+.profile-info p{
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+.section{
+    display: -moz-deck ;
+    margin-top: 20px;
+    text-align: left;
+}
+.section.div{
+    margin-top: 20px;
+    text-align: left;
+}
+h3 {
+    font-size: 1.5em;
+    color: #ff6b6b;
+    margin-bottom: 10px;
+}
+ul{
+    list-style-type: disc;
+    margin-left: 20px;
+}
+.contact-info{
+    margin-top: 20px;
+    text-align: left;
+}
+footer{
+    text-align: center;
+    padding: 20px;
+    background: #ff6b6b;
+    color: white;
+    margin-top: 20px;
+}
+@media (max-width: 600px){
+    .profile img {
+        width: 150px;
+        height: 200px;
+    }
+    header h1 {
+        font-size: 1.5em;
+    }
+    .profile-info h2 {
+        font-size: 2em;
+    }
+    h3 {
+        font-size: 1.5em;
+    }
 }
