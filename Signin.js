@@ -1,5 +1,4 @@
-
-import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-auth.js";
+import { getAuth,SigninWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-auth.js";
 
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-app.js";
@@ -34,7 +33,7 @@ register.addEventListener("click", (e) => {
     const email = document.getElementById("email").value 
     const password = document.getElementById("password").value
     const auth = getAuth();
-    createUserWithEmailAndPassword(auth, email, password)
+   SigninWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         // Signed up 
         const user = userCredential.user;
